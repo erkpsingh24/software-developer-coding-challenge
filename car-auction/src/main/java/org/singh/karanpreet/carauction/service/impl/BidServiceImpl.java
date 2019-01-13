@@ -16,7 +16,7 @@ public class BidServiceImpl implements BidService {
 
   @Override
   public List<Bid> getAllBidsForVehicle(Integer vehicleId) {
-    return bidRepository.findByVehicleId(vehicleId);
+    return bidRepository.findByVehicleIdOrderByBidTimeDesc(vehicleId);
   }
 
   @Override
@@ -28,11 +28,5 @@ public class BidServiceImpl implements BidService {
   public Bid getWinningBidForVehicle(int id) {
     return bidRepository.findFirstByVehicleIdOrderByBidAmountDesc(id);
   }
-
-  //  @Override
-  //  public Bid findById(Integer id) {
-  //    // TODO Auto-generated method stub
-  //    return null;
-  //  }
 
 }

@@ -29,6 +29,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+/*
+ * Some of the test cases are not checking for data changes 
+ * since for now I decided to go without using an 
+ * actual db for the testing
+* */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc

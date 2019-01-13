@@ -22,3 +22,6 @@ requests.post('http://localhost:8080/vehicles', json=vehicle1)
 requests.post('http://localhost:8080/vehicles', json=vehicle2)
 requests.post('http://localhost:8080/vehicles', json=vehicle3)
 requests.post('http://localhost:8080/vehicles', json=vehicle4)
+
+
+print "DB successfully populated! Run traderev.py to start!"

@@ -11,6 +11,4 @@ public interface BidService {
 
   public abstract Bid getWinningBidForVehicle(int id);
 
-  //  public abstract Bid findById(Integer id);
-
 }

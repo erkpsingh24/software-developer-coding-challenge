@@ -7,12 +7,12 @@ import org.springframework.data.repository.Repository;
 
 public interface BidRepository extends Repository<Bid, Integer> {
 
-  List<Bid> findByVehicleId(Integer vehicleId);
-
   List<Bid> findByUserId(Integer userId);
 
   Bid save(Bid bid);
 
   Bid findFirstByVehicleIdOrderByBidAmountDesc(int vehicleId);
+
+  List<Bid> findByVehicleIdOrderByBidTimeDesc(Integer vehicleId);
 
 }

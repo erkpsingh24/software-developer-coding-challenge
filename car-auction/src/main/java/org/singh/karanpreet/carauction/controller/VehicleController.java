@@ -47,6 +47,7 @@ public class VehicleController {
     return vehicleService.findById(id);
   }
 
+  //Bid request for a vehicle
   @PostMapping(value = "/{vehicleId}/bid")
   public Bid postBid(@PathVariable("vehicleId") int id, @RequestBody BidClient bidClient) {
     Bid bid = new Bid();
@@ -57,11 +58,13 @@ public class VehicleController {
     return bidService.save(bid);
   }
 
+  //List all bids for a vehicle
   @GetMapping(value = "/{vehicleId}/bids")
   public List<Bid> getAllBids(@PathVariable("vehicleId") int id) {
     return bidService.getAllBidsForVehicle(id);
   }
 
+  //Find out the winning for a vehicle
   @GetMapping(value = "/{vehicleId}/winningbid")
   public Bid getWinningBid(@PathVariable("vehicleId") int id) {
     return bidService.getWinningBidForVehicle(id);
