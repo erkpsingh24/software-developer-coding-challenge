@@ -1,7 +1,3 @@
-Steps to run:
-
-
-
 # Setup Steps:
 
 cd software-developer-coding challenge/car-auction
@@ -13,6 +9,10 @@ cd software-developer-coding challenge/car-auction
 
  - [ ] python setup/initializedb.py
  - [ ] python setup/traderev.py
+ 
+ #### Note: Currently the hibernate setup is set to create a new db at application startup - src/main/resources/application.properties:spring.jpa.hibernate.ddl-auto - create
+ 
+ Please update if you need to change it.
 
 
 # Software Developer Coding Challenge
