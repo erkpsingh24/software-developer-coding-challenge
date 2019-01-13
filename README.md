@@ -1,3 +1,20 @@
+Steps to run:
+
+
+
+# Setup Steps:
+
+cd software-developer-coding challenge/car-auction
+
+ - [ ] mvn clean install
+ - [ ] mvn spring-boot:run
+
+ ### For CLI:
+
+ - [ ] python setup/initializedb.py
+ - [ ] python setup/traderev.py
+
+
 # Software Developer Coding Challenge
 
 This is a coding challenge for software developer applicants applying through http://work.traderev.com/
