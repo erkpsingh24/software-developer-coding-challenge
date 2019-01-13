@@ -1,6 +1,6 @@
 # Setup Steps:
 
-cd software-developer-coding challenge/car-auction
+ - [ ] cd software-developer-coding challenge/car-auction
 
  - [ ] mvn clean install
  - [ ] mvn spring-boot:run
@@ -10,7 +10,9 @@ cd software-developer-coding challenge/car-auction
  - [ ] python setup/initializedb.py
  - [ ] python setup/traderev.py
  
- #### Note: Currently the hibernate setup is set to create a new db at application startup - src/main/resources/application.properties:spring.jpa.hibernate.ddl-auto - create
+ #### Note: Currently the application is set to create a new db at application startup. To change- 
+ 			src/main/resources/application.properties:spring.jpa.hibernate.ddl-auto - update(instead of create)
+ 	
  
  Please update if you need to change it.
 
